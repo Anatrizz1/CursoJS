@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos com DOM</title>
+    <style>
+        * {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(65, 65, 184);
+            font-size: 1.5em;
+            color: white;
+          
+        }
+        div {
+            background-color: white;
+            color: black;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div>
+        Clique em mim e o site ira mudar de cor
+    </div>
+    <script>
+        document.querySelector('div').onclick = function() {
+            document.body.style.backgroundColor = 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
+        }
+    </script>
+</body>
+</html>
