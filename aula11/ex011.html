@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: lightgray;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            margin: 50px auto;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        input[type="button"] {
+            padding: 5px 10px;
+        }
+        #res {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id ="container">
+    <h1>Vericando nacionalidade</h1>
+    País: <input type="text" id="txtpais" name= "txtpais" placeholder=" Digite o país">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    </div>
+    <script>
+        var pais = document.getElementById('txtpais')
+        var res = document.getElementById('res')
+        function verificar(){    
+            if(pais.value.length == 0){
+                alert('[ERRO] Digite o país!')
+            } else {
+                var p = pais.value
+                res.innerHTML = `<p>Você nasceu em <strong>${p}</strong></p>`
+                if(p.toLowerCase() == 'brasil'){
+                    res.innerHTML += `<p>Você é <strong>BRASILEIRO</strong></p>`
+                } else {
+                    res.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+                }
+            }
+        }
+    </script>
+</body>
+</html>
