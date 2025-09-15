@@ -1,0 +1,86 @@
+body {
+    background: #f0f2f5; /* Fundo cinza claro, cor moderna */
+    font-family: Arial, sans-serif;
+    display: flex; /* Usado para centralizar o conteúdo vertical e horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    margin: 0;
+}
+
+header {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*a caixa branca*/
+section {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para as áreas de input */
+div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 150px;
+    text-align: center;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a caixa de seleção da tabuada */
+select#seltab {
+    width: 250px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    overflow-y: auto; /* Adiciona barra de rolagem se a lista for muito longa */
+}
+
+/* Estilos do rodapé */
+footer {
+    color: #777;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
