@@ -9,6 +9,7 @@ function contar() {
         window.alert('[ERRO] Faltam dados!');
     } else {
         res.innerHTML = 'Contando... <br>';
+         
         let i = Number(inicio.value);
         let f = Number(fim.value);
         let p = Number(passo.value);
